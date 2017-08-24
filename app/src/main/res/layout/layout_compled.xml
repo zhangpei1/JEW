@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/completed_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F0F0F0"
+        android:dividerHeight="8dip" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/no_orders" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="当前页面暂时没有任务"
+            android:textColor="#b3b3b3"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</FrameLayout>

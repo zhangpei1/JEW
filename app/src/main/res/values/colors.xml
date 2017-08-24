@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3290f2</color>
+    <color name="colorPrimaryDark">#3290f2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windowBackground">#F0F0F0</color>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <color name="greyDark">#e0e0e0</color>
+    <color name="them_color">#00aced</color>
+</resources>

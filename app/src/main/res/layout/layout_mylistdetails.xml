@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/left_arrow"
+        android:navigationIcon="@drawable/left_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/them_color">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_mylistdetails"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/schedule"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_mylist_details"
+                android:button="@null"
+                android:gravity="center"
+                android:text="进度"
+                android:textColor="@drawable/myist_details"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/details"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selecor_mylist_details_two"
+                android:button="@null"
+                android:gravity="center"
+                android:text="详情"
+                android:textColor="@drawable/myist_details"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.new_jew.customview.MyViewpager
+        android:id="@+id/mylistdetails_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.new_jew.customview.MyViewpager>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/retreat_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ceed"
+            android:gravity="center"
+            android:text="退单"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00aced"
+            android:gravity="center"
+            android:text="提交至管理员"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

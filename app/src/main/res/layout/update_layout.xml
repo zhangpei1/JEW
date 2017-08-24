@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+<TextView
+    android:gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:textColor="#3290f2"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="软件版本有更新"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#3290f2"/>
+    <TextView
+        android:id="@+id/message"
+        android:textColor="#2c2c2c"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:text="dsaddasdas"
+        android:paddingTop="8dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:background="#DBDBDB"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:textColor="#2c2c2c"
+            android:text="以后在说"
+             android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:background="#DBDBDB"
+            android:layout_weight="0.01"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/negativeButton"
+            android:textColor="#2c2c2c"
+            android:text="下载"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

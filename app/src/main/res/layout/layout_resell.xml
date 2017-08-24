@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00aced"
+        app:navigationIcon="@drawable/left_arrow">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="债权转卖"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/them_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.5dp"
+                    android:text="车辆出售信息"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="0.2dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="出售金额"
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#b3b3b3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="万元"
+                        android:textColor="#4c4c4c"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/amount_sold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:minWidth="160dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="17.5dp"
+                android:background="#4c4c4c" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="0.2dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="出售时间"
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#b3b3b3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/btn_calendar" />
+
+                    <TextView
+                        android:id="@+id/selling_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/them_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.5dp"
+                    android:text="买车方信息"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="0.2dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="买车方"
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#b3b3b3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/car_buying_side"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:minWidth="160dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="17.5dp"
+                android:background="#4c4c4c" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="0.2dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话"
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#b3b3b3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/contact_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:minWidth="160dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/them_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.5dp"
+                    android:text="车辆出售凭证"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#b3b3b3" />
+
+            <com.new_jew.customview.GrapeGridview
+                android:id="@+id/car_sell_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:numColumns="3"
+                android:padding="15dp"></com.new_jew.customview.GrapeGridview>
+
+            <Button
+                android:id="@+id/sure_button"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/log_in_shape"
+                android:text="确认转卖债权"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

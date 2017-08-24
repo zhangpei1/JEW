@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/mlistview"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
+        android:background="@drawable/shape_city_province"></ListView>
+
+</LinearLayout>

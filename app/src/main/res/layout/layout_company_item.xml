@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/company_name"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="四川锦衣卫科技有限公司"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建人:"/>
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:id="@+id/create_name"
+                android:layout_marginLeft="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="杨东升"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/apply_join"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/log_in_shape"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="申请加入"/>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    android:id="@+id/pop_linear">
+
+<include layout="@layout/layout_title"></include>
+    <RelativeLayout
+        android:id="@+id/change_header"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像信息"/>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <com.new_jew.customview.RoundImageView
+                android:id="@+id/imageiv"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+
+            <ImageView
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrows"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="10dp">
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"/>
+
+        <TextView
+            android:id="@+id/business_name"
+            android:textColor="#999999"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="10dp">
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"/>
+
+        <TextView
+            android:id="@+id/principal_man"
+            android:textColor="#999999"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/change_password"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="10dp">
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"/>
+
+        <TextView
+            android:textColor="#999999"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:text="修改密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

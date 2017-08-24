@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3290f2"
+    android:fitsSystemWindows="true"
+    tools:context="com.new_jew.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F0F0F0"
+            android:fitsSystemWindows="true"></FrameLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+                android:id="@+id/debt_radio"
+                style="@style/RbMainTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_debt"
+                android:text="抢单" />
+
+            <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+                android:id="@+id/mylist_radio"
+                style="@style/RbMainTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_single"
+                android:text="任务" />
+
+            <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+                android:id="@+id/center_radio"
+                style="@style/RbMainTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_center"
+                android:text="我的" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/saixuan"
+        layout="@layout/layout_pop_screen"></include>
+</android.support.v4.widget.DrawerLayout>

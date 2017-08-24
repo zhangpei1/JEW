@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/root_linear">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00aced"
+        android:navigationIcon="@drawable/left_arrow"
+        app:navigationIcon="@drawable/left_arrow">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加催记"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/submit"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.Toolbar>
+    
+    <EditText
+        android:id="@+id/collection_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:hint="请如实描述催记"
+        android:background="#ffffff"
+        android:minHeight="109dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:horizontalSpacing="10dp"
+        android:paddingRight="10dp"
+       android:paddingLeft="10dp"
+        android:id="@+id/pic_gridview"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+</LinearLayout>

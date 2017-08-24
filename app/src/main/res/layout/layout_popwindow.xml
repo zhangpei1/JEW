@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="#ff000000">
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/Photograph"
+        android:background="#ffffff"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="拍照"/>
+
+    <Button
+        android:id="@+id/chose_picture"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="从相册中选择"/>
+
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="取消"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

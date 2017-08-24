@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/zhangpei/工具/svn/Zccz/code/Android/new_jew/pullTorefreshlistviewlibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/indicator_arrow.png",
+        "source": "/home/zhangpei/工具/svn/Zccz/code/Android/new_jew/pullTorefreshlistviewlibrary/build/intermediates/bundles/debug/res/drawable-mdpi-v4/indicator_arrow.png"
+    },
+    {
+        "merged": "/home/zhangpei/工具/svn/Zccz/code/Android/new_jew/pullTorefreshlistviewlibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/default_ptr_flip.png",
+        "source": "/home/zhangpei/工具/svn/Zccz/code/Android/new_jew/pullTorefreshlistviewlibrary/build/intermediates/bundles/debug/res/drawable-mdpi-v4/default_ptr_flip.png"
+    },
+    {
+        "merged": "/home/zhangpei/工具/svn/Zccz/code/Android/new_jew/pullTorefreshlistviewlibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/default_ptr_rotate.png",
+        "source": "/home/zhangpei/工具/svn/Zccz/code/Android/new_jew/pullTorefreshlistviewlibrary/build/intermediates/bundles/debug/res/drawable-mdpi-v4/default_ptr_rotate.png"
+    }
+]

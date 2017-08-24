@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:background="#e6e6e6">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="110dp"
+        android:layout_height="110dp">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/pic_img"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="right"
+            android:src="@drawable/btn_delete" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="照片/拍照"
+            android:textColor="#cfcfcf"
+            android:textSize="16sp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.new_jew">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    //自动对焦
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    //相机使用权限
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:anyDensity="true"
+        android:icon="@drawable/ic_manager"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+        <!--<supports-screens-->
+        <!--android:anyDensity="true"-->
+        <!--android:largeScreens="true"-->
+        <!--android:normalScreens="true"-->
+        <!--android:smallScreens="true" />-->
+
+        <activity android:name=".ui.activity.WelComeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".ui.activity.LogInActivity"
+            android:theme="@style/AppTheme_log"></activity>
+        <activity android:name=".ui.activity.RegisterActivity"></activity>
+        <activity android:name=".ui.activity.MyListDetailsActivity"></activity>
+        <activity android:name=".ui.activity.Pdf_Activity"></activity>
+        <activity android:name=".ui.activity.PictureDetails"></activity>
+        <activity android:name=".ui.activity.AssociateProveActivity"></activity>
+        <activity
+            android:name=".ui.activity.AssociateProveActivity1"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity android:name=".ui.activity.AboutUsActiviyt"></activity>
+        <activity android:name=".ui.activity.Retrieve_password"></activity>
+        <activity android:name=".ui.activity.AgreementActivity"></activity>
+        <activity android:name=".ui.activity.Data_Uploading_Activity"></activity>
+        <activity android:name=".ui.activity.SearchAndJoinActivity"></activity>
+        <activity android:name=".ui.activity.SearchAndJoinTwoActivity"></activity>
+        <activity android:name=".ui.activity.DebtDetilsActivity"></activity>
+        <activity
+            android:name=".ui.activity.CreatCompanyActiviy"
+            android:configChanges="orientation|keyboardHidden"
+
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity android:name=".ui.activity.WaitAudit"></activity>
+        <activity android:name=".ui.activity.CompleteRegister"></activity>
+        <activity android:name=".ui.activity.CompanyDetailsActivity"></activity>
+        <activity android:name=".ui.activity.CompanyMemberActivity"></activity>
+        <activity android:name=".ui.activity.CollectionActivity"></activity>
+        <activity android:name=".ui.activity.AddCollectionActivity"></activity>
+        <activity android:name=".ui.activity.MsgActivity"></activity>
+        <activity android:name=".ui.activity.PersonApplyActivity"></activity>
+        <activity android:name=".ui.activity.PersonDetails"></activity>
+        <activity android:name=".ui.activity.PersonDetails1"></activity>
+        <activity android:name=".ui.activity.CompanyTask"></activity>
+        <activity android:name=".ui.activity.CompanyOdersActivity"></activity>
+        <activity
+            android:name=".ui.activity.SearchCarActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity android:name=".main.ui.activity.ToMainActivity"></activity>
+        <activity android:name=".main.ui.activity.CreditorsRightsActivity"></activity>
+        <activity android:name=".main.ui.activity.PutCarActivity"></activity>
+        <activity android:name=".main.ui.activity.CheckCarActivity"></activity>
+        <activity android:name=".main.ui.activity.GarrageDetailsActivity"></activity>
+        <activity android:name=".main.ui.activity.SurePutCarActivity"></activity>
+        <activity android:name=".main.ui.activity.ExhibitionDetailsActivity"></activity>
+        <activity android:name=".main.ui.activity.SellCarActivity"></activity>
+        <activity android:name=".main.ui.activity.CreditorRightsResellActivity"></activity>
+        <activity android:name=".main.ui.activity.GarageInToExhibitionActivity"></activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fo7isdh5GsDGwPbtCIt0kWExFxng7WSW" />
+        <receiver
+            android:name=".net.Receiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"></action>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="com.new_jew" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <service android:name=".net.UpdateService"></service>
+    </application>
+
+</manifest>

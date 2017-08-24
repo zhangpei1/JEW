@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aced"
+        android:navigationIcon="@drawable/left_arrow"
+        app:navigationIcon="@drawable/left_arrow">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="新用户注册"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_user" />
+
+            <EditText
+                android:id="@+id/text_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:background="@null"
+                android:digits="1234567890"
+                android:ellipsize="end"
+                android:hint="手机号码"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColorHint="#e6e6e6"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_test" />
+
+            <EditText
+                android:id="@+id/input_code"
+                android:layout_toRightOf="@id/img_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:background="@null"
+                android:digits="1234567890"
+                android:ellipsize="end"
+                android:hint="请输入短信验证码"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColorHint="#e6e6e6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:padding="6dp"
+                android:id="@+id/obtain_text"
+                android:textColor="#3290f2"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="获取验证码"
+                android:background="@drawable/shape_code"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_password" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:background="@null"
+                android:digits="1234567890"
+                android:ellipsize="end"
+                android:hint="设置登录密码"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColorHint="#e6e6e6"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:layout_marginRight="40dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--&gt;-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/checkbox1"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:button="@null"-->
+    <!--android:background="@drawable/chect_box"-->
+    <!--android:layout_width="15dp"-->
+    <!--android:layout_height="15dp" />-->
+    <!--<TextView-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="我已阅读并同意"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/agreement"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#3290f2"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/agreement"/>-->
+    <!--</LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/button_register1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/log_in_shape"
+        android:text="完成注册"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

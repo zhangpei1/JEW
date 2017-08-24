@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/them_color"
+        app:navigationIcon="@drawable/left_arrow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="交接证明"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="#00aced" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="交接相关物件"
+                        android:textColor="#4d4d4d"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="(请选择已交接物件)"
+                        android:textColor="#b3b3b3"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <com.new_jew.customview.GrapeGridview
+                    android:id="@+id/connect_grapegridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:columnWidth="90dp"
+                    android:horizontalSpacing="20.0px"
+                    android:minHeight="160dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20.0px">
+
+                </com.new_jew.customview.GrapeGridview>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/vehicle_condition_icon" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:text="车辆情况"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:text="(请点击损坏进行标注)"-->
+                <!--android:textColor="#FF8B2E"-->
+                <!--android:textSize="12sp" />-->
+
+                <!--</LinearLayout>-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="#00aced" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="车辆损坏情况"
+                        android:textColor="#4d4d4d"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="(请选择损坏处)"
+                        android:textColor="#b3b3b3"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.new_jew.customview.GrapeGridview
+                    android:id="@+id/associate_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnWidth="90dp"
+                    android:horizontalSpacing="20.0px"
+                    android:minHeight="160dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20.0px">
+
+                </com.new_jew.customview.GrapeGridview>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="#00aced" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="其他信息"
+                        android:textColor="#4d4d4d"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#e6e6e6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="里程表公里数"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_linearyout"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="公里"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/mileage"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffffff"
+                        android:hint="请输入公里数"
+                        android:singleLine="true"
+
+                        android:textColorHint="#cccccc"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="其他物品"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_linearyout"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/extra_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:gravity="top"
+                        android:hint=" 选填"
+                        android:minHeight="60dp"
+                        android:textColor="#666666"
+                        android:textColorHint="#cccccc"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="其他事项"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_linearyout"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/extra_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:gravity="top"
+                        android:hint=" 选填"
+                        android:minHeight="60dp"
+                        android:textColor="#666666"
+                        android:textColorHint="#cccccc"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_reward"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

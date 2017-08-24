@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon_owner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="车主信息"
+                        android:textColor="@color/them_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车主姓名"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车主身份证"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/owner_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车主电话"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/owner_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon_car" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="车辆信息"
+                        android:textColor="@color/them_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车型"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/car_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车牌号"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/car_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车架号"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_frame_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发动机号"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_engine_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公里数"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_kilometers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上牌年月"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_card_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车辆归属地"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_parking_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有无行驶证"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_has_driving_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有无车钥匙"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_has_keys"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="验车有效期"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_check_validity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />、
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保险有效期"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_insurance_validity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="违章分数"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_violation_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon_budget" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="费用预算"
+                        android:textColor="@color/them_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="竞标报价"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bidding_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预估总成本"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/estimated_vehicle_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="杨东升"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

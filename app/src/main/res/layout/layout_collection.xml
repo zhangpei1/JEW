@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aced"
+        android:navigationIcon="@drawable/left_arrow"
+        app:navigationIcon="@drawable/left_arrow">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="催记"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/collection_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#d0d0d0"
+            android:scrollbars="none"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <LinearLayout
+            android:id="@+id/no_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text=" 抱歉,您还没有催记!"
+                android:textColor="#b3b3b3"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/add_collection"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:background="@color/them_color"
+        android:text="+添加催记"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/garrage_car_listview "
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F0F0F0"
+        android:scrollbars="none"
+        android:dividerHeight="7dp"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

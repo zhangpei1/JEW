@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/them_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:id="@+id/search_text1"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="搜索"/>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/search_text1"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/back_img"
+                android:background="@drawable/shape_search_two"
+                android:layout_marginLeft="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:hint="搜索您要加入的公司"
+                    android:layout_gravity="center"
+                    android:id="@+id/editText"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#666666"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/company_list"
+        android:divider="#F0F0F0"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

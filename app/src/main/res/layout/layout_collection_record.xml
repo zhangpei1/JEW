@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/record_time"
+            android:textSize="13sp"
+            android:textColor="#6A6A6A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#6A6A6A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="催收员" />
+
+            <TextView
+                android:id="@+id/record_collection"
+                android:textSize="13sp"
+                android:textColor="#6A6A6A"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/record_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adress"/>
+
+        <TextView
+            android:id="@+id/record_adress"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+             <LinearLayout
+                 android:layout_marginBottom="15dp"
+                 android:layout_marginTop="15dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/examine_accessory"
+                     android:textSize="14sp"
+                     android:textColor="#3090F2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="查看附件"/>
+
+                 <TextView
+                     android:background="#3090F2"
+                     android:layout_width="match_parent"
+                     android:layout_height="0.6dp"/>
+             </LinearLayout>
+    <TextView
+        android:layout_marginLeft="27dp"
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

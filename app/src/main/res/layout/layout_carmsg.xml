@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="车型:" />
+
+            <TextView
+                android:id="@+id/vehicle_brand_name"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="车辆归属地:" />
+
+            <TextView
+                android:id="@+id/vehicle_ownership_name"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="上牌时间:" />
+
+            <TextView
+                android:id="@+id/vehicle_plate_year"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/debtmsg"-->
+                <!--android:layout_width="85dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="车牌号:" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/vehicle_plate_number"-->
+                <!--style="@style/debtmsg2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="车辆颜色:" />
+
+            <TextView
+                android:id="@+id/vehicle_color"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/debtmsg"-->
+                <!--android:layout_width="85dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="发动机号:" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/vehicle_engine_number"-->
+                <!--style="@style/debtmsg2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/debtmsg"-->
+                <!--android:layout_width="85dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="车架号:" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/vehicle_frame_number"-->
+                <!--style="@style/debtmsg2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="车辆状态:" />
+
+            <TextView
+                android:id="@+id/vehicle_status"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="GPS:" />
+
+            <TextView
+                android:id="@+id/vehicle_has_gps"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="车钥匙:" />
+
+            <TextView
+                android:id="@+id/normal_key"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="违章记录:" />
+
+            <TextView
+                android:id="@+id/vehicle_has_illegal"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="违章时间:" />
+
+            <TextView
+                android:id="@+id/vehicle_illegal_day"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/debtmsg"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="车辆疑似位置:" />
+
+            <TextView
+                android:id="@+id/vehicle_possible_address"
+                style="@style/debtmsg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/debtmsg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违章记录" />
+
+        <TextView
+            android:id="@+id/vehicle_illegal_details"
+            style="@style/debtmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"></TextView>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

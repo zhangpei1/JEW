@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.new_jew.MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/them_color">
+
+        <LinearLayout
+            android:id="@+id/search_linear"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/shape_debt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_search" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="请输入车牌号搜索嫌疑车辆"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+
+        <RadioGroup
+            android:id="@+id/root_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="56dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/select_screen"
+                android:gravity="center"
+                android:text="等级"
+                android:textColor="@drawable/textcolor" />
+
+            <RadioButton
+                android:id="@+id/brokerage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="85dp"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/select_screen"
+                android:gravity="right|center"
+                android:text="佣金"
+                android:textColor="@drawable/textcolor" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/screen"
+            android:background="#e6e6e6" />
+
+        <RadioButton
+            android:id="@+id/screen"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_filter"
+            android:gravity="right|center_vertical"
+            android:text="筛选"
+            android:textColor="#666666" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/debt_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#F0F0F0"
+            android:dividerHeight="7dp"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+</LinearLayout>

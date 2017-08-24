@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杨东升"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 申请加入本公司"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:text="2012-12-1"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:background="#73cff1"
+            android:text="忽略"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/agree_button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:background="#00aced"
+            android:text="同意"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+</RelativeLayout>

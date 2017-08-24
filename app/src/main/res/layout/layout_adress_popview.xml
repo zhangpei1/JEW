@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="#ff000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<RelativeLayout
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/cancel"
+        android:textSize="15sp"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/them_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"/>
+
+
+    <TextView
+        android:id="@+id/complete"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/them_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"/>
+</RelativeLayout>
+        <!--<View-->
+            <!--android:background="#ededed"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp" />-->
+<LinearLayout
+    android:background="#ededed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <com.wx.wheelview.widget.WheelView
+        android:cacheColorHint="@color/them_color"
+        android:id="@+id/province"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"></com.wx.wheelview.widget.WheelView>
+
+    <com.wx.wheelview.widget.WheelView
+        android:id="@+id/city"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"></com.wx.wheelview.widget.WheelView>
+
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

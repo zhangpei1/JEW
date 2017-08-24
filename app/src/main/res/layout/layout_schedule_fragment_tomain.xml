@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验车"
+                android:textColor="@color/them_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_time" />
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2015-06-6"
+                    android:textColor="@color/them_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.1dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/them_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.5dp"
+                android:text="验车照片"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <com.new_jew.customview.GrapeGridview
+                android:id="@+id/check_car_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"></com.new_jew.customview.GrapeGridview>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/load_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/more_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加载更多"
+                        android:textColor="#cccccc"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/more_img"
+                        android:layout_width="11dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/btn_arrow" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#e6e6e6" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/them_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.5dp"
+                    android:text="验车情况说明"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/check_car_situation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19.5dp"
+                android:layout_marginTop="14dp"
+                android:text="车况达标可以提车" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/them_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.5dp"
+                    android:text="验车位置"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/park_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="19.5dp"
+                android:layout_marginTop="14dp"
+                android:text="成都市武侯区" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

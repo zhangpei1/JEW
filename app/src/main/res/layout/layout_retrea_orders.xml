@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_retreat"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="填写退单原因"
+        android:textColor="@color/them_color"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_margin="19dp"
+        android:background="@drawable/shape_linearyout">
+
+        <EditText
+            android:id="@+id/order_content"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:textColorHint="#b3b3b3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:hint="请如实填写退单原因" />
+    </LinearLayout>
+           <Button
+               android:id="@+id/retrea_button"
+               android:textSize="18sp"
+               android:textColor="#ffffff"
+               android:text="退单"
+               android:layout_marginBottom="19dp"
+               android:layout_marginRight="19dp"
+              android:layout_marginLeft="19dp"
+               android:background="@drawable/log_in_shape"
+               android:layout_width="match_parent"
+               android:layout_height="42dp" />
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F5F4F2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="筛选"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="车辆疑似位置"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/root_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/province_radio"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_city_province"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/select_screen"
+                android:gravity="right|center_vertical"
+                android:paddingRight="5dp"
+                android:text="省"></CheckBox>
+
+
+            <CheckBox
+                android:id="@+id/city_radio"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape_city_province"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/select_screen"
+                android:gravity="right|center_vertical"
+                android:paddingRight="5dp"
+                android:text="市"></CheckBox>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="佣金范围"
+            android:textSize="15sp" />
+
+        <com.new_jew.customview.GrapeGridview
+            android:id="@+id/money_debt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="20.0px"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20.0px"></com.new_jew.customview.GrapeGridview>
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="期逾级别"
+            android:textSize="15sp" />
+
+        <com.new_jew.customview.GrapeGridview
+            android:id="@+id/level_debt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="20.0px"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20.0px"></com.new_jew.customview.GrapeGridview>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="GPS"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <com.new_jew.customview.GrapeGridview
+                android:id="@+id/is_gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="20.0px"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20.0px"></com.new_jew.customview.GrapeGridview>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="违章记录"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <com.new_jew.customview.GrapeGridview
+                android:id="@+id/is_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="20.0px"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20.0px"></com.new_jew.customview.GrapeGridview>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#C0DCFA"
+            android:text="重置"
+            android:textColor="#3290F2" />
+
+        <Button
+            android:id="@+id/complete_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3290F2"
+            android:text="完成"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
